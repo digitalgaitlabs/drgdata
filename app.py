@@ -9,7 +9,7 @@ app = Dash(__name__)
 server = app.server  # for Render deployment
 
 app.layout = html.Div([
-    html.H1("DRG Table Explorer", style={"textAlign": "center"}),
+    html.H1("DRG Table Explorer - from Digital Gait Labs.", style={"textAlign": "center"}),
     dash_table.DataTable(
         id='drg-table',
         columns=[{"name": i, "id": i} for i in df.columns],
