@@ -19,8 +19,15 @@ app.layout = html.Div([
         sort_action="native",
         style_table={'overflowX': 'auto'},
         style_cell={'textAlign': 'left', 'minWidth': '120px', 'maxWidth': '300px'},
-    )
+    ),
+    html.Br(),
+    html.Div([
+        html.A("Visit Digital Gait Labs", href="http://digitalgaitlabs.com", target="_blank", style={
+            "textAlign": "center", "display": "block", "margin": "20px auto", "fontSize": "16px", "color": "#0074D9"
+        })
+    ])
 ])
+  
 
 if __name__ == "__main__":
     app.run_server(debug=True)
